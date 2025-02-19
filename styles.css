@@ -17,17 +17,27 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block;
+    margin: 10px;
 }
 
 nav ul li a {
+    display: inline-block;
+    padding: 10px 15px;
     color: white;
+    background: #0073e6;
+    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #005bb5;
 }
 
 section {
@@ -67,32 +77,28 @@ ul li a:hover {
     text-decoration: underline;
 }
 
-button {
-    padding: 10px 15px;
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #005bb5;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     section {
         width: 90%;
     }
-}
-@media (min-width: 500px)
-{
-    button {
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
         width: 100%;
-        font-size: 14px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 90%;
         padding: 12px;
+        font-size: 16px;
     }
 }
-
