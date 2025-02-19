@@ -86,8 +86,13 @@ button:hover {
     section {
         width: 90%;
     }
-    nav ul li {
-        display: block;
-        margin: 5px 15px;
+}
+@media (min-width: 500px)
+{
+    button {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
     }
 }
+
